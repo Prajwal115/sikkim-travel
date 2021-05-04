@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Travel SKM| ICT India</title>
+    </head>
+<style>
+    body{
+        background-color: black;
+    }
+    .menu{
+    color:black;
+    font-size: 35px;
+    background-color: powderblue;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    color:white;
+    font-family: Century Gothic;
+}
+.text{
+    color:white;
+    font-size: 30px;
+    font-family: century gothic;
+}
+@keyframes ami{
+        0%{
+            opacity:0.1;
+        }
+
+        20%{
+            opacity:0.2;
+
+        }
+        30%{
+            opacity:0.3;            
+
+        }
+        40%{
+            opacity:0.4;
+
+        }
+        50%{
+            opacity:0.5;
+
+        }
+        60%{
+            opacity: 0.6;
+
+        }
+        70%{
+            opacity:0.7;
+
+        }
+        80%{
+            opacity: 0.8;
+        }
+        90%{
+            opacity:0.9;
+
+        }
+        100%{  
+            opacity:1;
+
+        }
+    }
+
+h2{
+    padding-top: 5%;
+}
+#main{
+    background-color: black;
+    opacity: 0.7;
+}
+#main h1{
+    text-align: center;
+    font-family:Century Gothic;
+    font-size: 40px;
+    color:yellow;
+    opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 75%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+button{
+    width:50%;
+    border:0.2cm solid black;
+    font-family: Century Gothic;
+    font-size: 15px;
+    background-color:#CB4154;
+    color:white;
+}
+img{
+    width:100%;
+}
+
+@keyframes border{
+    25%{
+        border-color:red;
+    }
+    50%{
+        border-color:white;
+    }
+    75%{
+        border-color:darkblue;
+    }
+    100%{
+        border-color:yellow;
+    }
+}
+button:hover{
+animation-name:border;
+position: relative;
+animation-duration:2s;
+}
+footer{
+    color:white;
+    background-color: brown;
+    font-size: 20px;
+    text-align: center;
+}
+#more {display: none;}
+#more1{
+    display: none;
+}
+P{
+    font-family: century gothic;
+}
+h2{
+    font-family: century gothic;
+}
+.row{
+    background-color: powderblue;
+
+    opacity: 0.9;
+}
+.row:hover{
+    background-color: #bbb;
+}
+#more2{
+    display: none;
+}
+
+
+.fullscreen-bg {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    opacity: 0.7;
+
+}
+
+.fullscreen-bg img {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    padding-bottom: 10%;
+    opacity: 0.7;
+}
+footer{
+    color:white;
+    background-color: brown;
+    font-size: 20px;
+    text-align: center;
+}
+</style>
+<div class="fullscreen-bg" >
+
+    <video loop autoplay class ="fullscreen-bg__video">
+      <source src ="img/Travel.mp4" type="video/mp4"></source>
+    </video>
+    </div>
+    <body>
+    <a href = "menu/menu2.html"> 
+        <span class ="menu" style="cursor:pointer;">☰</span>
+        </a>
+        <h1>HOW TO REACH SIKKIM?</h1>
+
+        <div class="row">
+            <div class="column">
+            <img src = "img/travel.jpg">
+            <h2>By Air</h2>
+            <p>Sikkim did not have any operational airport for a long time because of its rough terrain. However, in October 2018, Pakyong Airport, the state's first airport, located at a distance of 30 km (19 mi) from Gangtok, became operational after a four-year delay. At an altitude <span id = "dots"></span>...<span id ="more">   of 4,700 feet (1,400 m) above sea level, it is one of the five highest airports in India.Before October 2018, the closest operational airport to Sikkim was Bagdogra Airport near Siliguri in northern West Bengal. The airport is located about 124 km (77 mi) from Gangtok, and frequent buses connect the two. A daily helicopter service run by the Sikkim Helicopter Service connects Gangtok to Bagdogra; the flight is thirty minutes long, operates only once a day, and can carry four people. The Gangtok helipad is the only civilian helipad in the state. </span></p>
+            <button onclick = "myFun()" id = "myBtn">Read More</button>
+            </div>
+            <div class="column">
+             <img src = "img/road.jpg">
+            <h2>By Road</h2>
+            <p>National Highway 10 (NH 10; formerly NH 31A) links Siliguri to Gangtok. Sikkim Nationalised Transport runs bus and truck services .Privately run bus, tourist taxi, and jeep services operate throughout Sikkim and also connect it  to Siliguri. A branch of the highway from Melli <span id = "dot1">...</span> <span id = "more1">    connects western Sikkim.. Towns in southern and western Sikkim are connected to the hill stations of Kalimpong and Darjeeling in northern West Bengal. The state is furthermore connected to Tibet by the mountain pass of Nathu La.</span></p>
+            <button onclick="myFun2()" id = "myBtn2">Read More</button>
+            </div>
+            <div class="column">
+                <img src = "img/RT.jpg">
+
+            <h2>By Train</h2>
+            <p>Sikkim lacks significant railway infrastructure. The closest major railway stations are Siliguri Junction and New Jalpaiguri in neighbouring West Bengal. However, the New Sikkim Railway Project has been launched to connect the town of Rangpo in Sikkim with Sevoke on the West Bengal<span id = "dot2">...</span><span id ="more2"> border.he railway line up to Rangpo is expected to be completed in 2021.</span></p>
+            <button onclick="myFun3()" id = "myBtn3">Learn More !</button>
+            </div>
+          </div>
+          
+        </div>
+<script>
+    function myFun() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+        function myFun2() {
+  var dots1 = document.getElementById("dot1");
+  var moreText1 = document.getElementById("more1");
+  var btnText1 = document.getElementById("myBtn2");
+
+  if (dots1.style.display === "none") {
+    dots1.style.display = "inline";
+    btnText1.innerHTML = "Read more";
+    moreText1.style.display = "none";
+  } else {
+    dots1.style.display = "none";
+    btnText1.innerHTML = "Read less";
+    moreText1.style.display = "inline";
+  }
+}
+function myFun3() {
+  var dots2 = document.getElementById("dot2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn3");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more";
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less";
+    moreText2.style.display = "inline";
+  }
+}
+</script>
+
+<footer>Created by PRAJWAL aka Innovative Challenger &copy; 2021 . FOR EDUCATIONAL PURPOSE ONLY.</footer>
+</body>

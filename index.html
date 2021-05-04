@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | ICT India</title>
+    </head>
+
+<style>
+html{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.menu{
+    color:black;
+    font-size: 35px;
+    background-color: powderblue;
+}
+strong{
+    font-size:70px;
+    color:darkblue;
+}
+.code{
+    font-size: 20px;
+    background-color: none;
+    color:orange;
+}
+.head{
+    font-family: Century Gothic;
+    text-align: center;
+    font-size: 60px;
+    color:brown;
+}
+ 
+
+  .fullscreen-bg {
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    opacity: 0.7;
+
+}
+
+.fullscreen-bg img {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    padding-bottom: 10%;
+    opacity: 0.7;
+}
+@keyframes color{
+    100%{color:yellow;}
+}
+.head{
+    animation-name:color;
+    animation-delay: 11s;
+    position: relative;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+@keyframes cc{
+ 100%{color:white;}
+}
+strong{
+    animation-name:cc;
+    position: relative;
+    animation-delay: 11s;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+.code{
+    animation-name:cc;
+    position: relative;
+    animation-delay: 11s;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+}
+.text{
+    color:white;
+    font-size: 30px;
+    font-family: century gothic;
+}
+@keyframes ami{
+        0%{
+            opacity:0.1;
+        }
+
+        20%{
+            opacity:0.2;
+
+        }
+        30%{
+            opacity:0.3;            
+
+        }
+        40%{
+            opacity:0.4;
+
+        }
+        50%{
+            opacity:0.5;
+
+        }
+        60%{
+            opacity: 0.6;
+
+        }
+        70%{
+            opacity:0.7;
+
+        }
+        80%{
+            opacity: 0.8;
+        }
+        90%{
+            opacity:0.9;
+
+        }
+        100%{  
+            opacity:1;
+
+        }
+    }
+
+h2{
+    padding-top: 5%;
+}
+#main{
+    background-color: black;
+    opacity: 0.7;
+}
+#main h1{
+    text-align: center;
+    font-family:Century Gothic;
+    font-size: 40px;
+    color:yellow;
+    opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column  {
+    width: 100%;
+  }
+}
+button{
+    width:50%;
+    border:0.2cm solid black;
+    font-family: Century Gothic;
+    font-size: 20px;
+    background-color:#CB4154;
+    color:white;
+}
+img{
+    width:100%;
+}
+.column{
+    background-color: powderblue;
+}
+.column:hover{
+    background-color: #bbb;
+}
+@keyframes border{
+    25%{
+        border-color:red;
+    }
+    50%{
+        border-color:white;
+    }
+    75%{
+        border-color:darkblue;
+    }
+    100%{
+        border-color:yellow;
+    }
+}
+button:hover{
+animation-name:border;
+position: relative;
+animation-duration:2s;
+}
+footer{
+    color:white;
+    background-color: brown;
+    font-size: 20px;
+    text-align: center;
+}
+</style>
+
+    <body>  
+
+    <a href = "menu/menu.html"> 
+    <span class ="menu" style="cursor:pointer;">☰</span>
+    </a> 
+    <h1 class = "head"><strong>I</strong>nnovative <strong>C</strong>hallenger <strong>T</strong>ravel <span class = "code">IN</span></h1>
+    <p class = "text">Travel the World 🌎 . Our Planet Earth is so beautiful and diverse . Travelling the globe is the thing that you'll never regret . Here we'll know about the Cultures and Traditions of the Indian State of Sikkim.</p>
+    <div class="fullscreen-bg" >
+
+        <video loop autoplay class ="fullscreen-bg__video">
+          <source src ="img/home.mp4" type="video/mp4"></source>
+        </video>
+        </div>
+        <div class = "no-dis"></div>
+        <p style="display: none;">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+        <p display = "none">.</p>
+
+        <div id = "main">
+
+        <h1>LET'S EXPLORE THE BEAUTY OF THE WORLD !</h1>
+        <div class="row">
+            <div class="column">
+            <img src = "img/travel.jpg">
+            <h2>Reach Sikkim</h2>
+            <p>Get to know the ways - how you can visit Sikkim (by Air , Road , Train)</p>
+            <a href = "travel.html">
+            <button>Learn More !</button>
+        </a>
+            </div>
+            <div class="column">
+             <img src = "img/culture.jpg">
+            <h2>Culture</h2>
+            <p>Get to know about the traditional Sikkimese Culture </p>
+            <a href = "culture.html">
+            <button>Learn More !</button>
+        </a>    
+        </div>
+            <div class="column">
+                <img src = "img/Des.jpg">
+
+            <h2>Destinations</h2>
+            <p>Find the Famous Destinations to visit in Sikkim...</p>
+            <a href = "dest.html">
+            <button>Learn More !</button>
+</a>
+        </div>
+            <div class="column">
+            <img src = "img/ac.jpg">
+            <h2>Art and Craft</h2>
+            <p>Sikkim is famous for it's Art and Craft markets.. Explore the famous crafts..</p>
+           
+           <a href = "art.html"><button>Learn More !</button></a> 
+            </div>
+          </div>
+          
+        </div>
+        <footer>Created by PRAJWAL aka Innovative Challenger &copy; 2021 . FOR EDUCATIONAL PURPOSE ONLY.</footer>
+    </body>
+    
+    </html>
