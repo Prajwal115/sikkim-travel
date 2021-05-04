@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Home</title>
+    </head>
+    <style>
+        .head{
+            text-decoration: none;
+            color:black;
+            float: right;
+            font-size: 35px;
+            background-color: aliceblue;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        p{
+            display: block;
+            font-size: 25px;
+            font-family: Century Gothic;
+            padding-bottom:2%;
+            text-align: center;
+            background-color:powderblue;
+            align-items: center;
+
+        }
+      .container{
+          padding-top: 5%;
+      }
+       @keyframes ami{
+        0%{
+            display: none;
+            left:100%;
+            opacity:0.1;
+        }
+
+        20%{
+            opacity:0.2;
+
+        }
+        30%{
+            opacity:0.3;            
+
+        }
+        40%{
+            opacity:0.4;
+
+        }
+        50%{
+            opacity:0.5;
+
+        }
+        60%{
+            left:50%;
+
+        }
+        70%{
+            opacity:0.7;
+
+        }
+        80%{
+
+        }
+        90%{
+            opacity:0.9;
+
+        }
+        100%{  
+            opacity:1;
+            left:0%;
+        }
+       }
+       p{
+           animation-name:ami;
+           position: relative;
+           animation-duration: 3s;
+           animation-name:opa;
+           position:relative;
+           animation-duration: 4s;
+       }
+      @keyframes opa{
+          0%{
+              opacity: 0;
+          }
+          100%{
+             opacity:1; 
+          }
+      }
+      #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+body{
+
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+
+}
+.head{
+    animation: ami;
+    position: fixed;
+    animation-duration: 2s;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+    </style>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="../img/foot.mp4" type="video/mp4">
+      </video>  
+    <body>
+ 
+            <a class = "head" href = "../index.html">Close</a>
+            <div class = "container">
+                <a href = "../index.html"> <p class = "oh">Home</p></a>
+                <A href = "../travel.html"><p>Reach Sikkim</p></A> 
+                <A href = "../Culture.html"><p>Sikkim Culture</p></A> 
+                <A href = "../dest.html"><p>Destinations</p></A> 
+                <A href = "../art.html"><p>Art and Craft</p></A>
+                <a href = "../about.html"><p>About Me</p></a>
+        </div>
+       
+    </body>
+</html>
